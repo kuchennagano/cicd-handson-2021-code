@@ -50,7 +50,7 @@ jobs:
 
         # コンテナイメージをGitHub Packagesに「docker image push」
       - name: Push image to GitHub Packages
-        run: docker image push  ghcr.io/${{ github.repository }}/go-image:${{ github.run_number }}
+        run: docker image push docker.pkg.github.com/${{ github.repository }}/go-image:${{ github.run_number }}
 
 # プルリクエストを作る job を新規で定義します
   # 「needs: build」を書いておくことで、build の job が終わった後に実行されるようにします
