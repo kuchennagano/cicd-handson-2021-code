@@ -65,7 +65,7 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           repository: ${{ secrets.USERNAME }}/cicd-handson-2021-config
 
-        # プルリクエスト用の新規ブランチを作成し、プッシュした後にプルリクエストを作成します
+        # プルリクエスト用の新規ブランチを作成し、プッシュした後にプルリクエストを作成しま
       - name: Pull Request to Config Repository
         run: |
           # GitHubログイン設定
